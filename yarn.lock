@@ -5427,6 +5427,11 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+maska@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/maska/-/maska-1.3.2.tgz#5af9cf8fb7c788c386bc2605e0a86fe1e899361b"
+  integrity sha512-8AcAVwPck3vpPATcwnyR7iPvNnNDAfBJBuCxLRPAY6VlL1LB3HjRXgFqUJvaxJaG96TExeEdUo398jVx0kKGPg==
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.npm.taobao.org/md5.js/download/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -8584,10 +8589,20 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
+vue-yandex-maps@^0.10.9:
+  version "0.10.9"
+  resolved "https://registry.yarnpkg.com/vue-yandex-maps/-/vue-yandex-maps-0.10.9.tgz#e521660201508474ab9855162f04026fdbe67c0f"
+  integrity sha512-gDRU3bGFGxMYE8XFcyrSndRzxTC6opvKL4WvIhMRD8SctObQWdonI0h2NpU8Srn5ge8MV5a9QDjQs9Mrqj+slA==
+
 vue@^2.6.11:
   version "2.6.12"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz?cache=0&sync_timestamp=1606946138346&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha1-9evU+mvShpQD4pqJau1JBEVskSM=
+
+vuelidate@^0.7.6:
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/vuelidate/-/vuelidate-0.7.6.tgz#84100c13b943470660d0416642845cd2a1edf4b2"
+  integrity sha512-suzIuet1jGcyZ4oUSW8J27R2tNrJ9cIfklAh63EbAkFjE380iv97BAiIeolRYoB9bF9usBXCu4BxftWN1Dkn3g==
 
 vuex@^3.4.0:
   version "3.6.0"
