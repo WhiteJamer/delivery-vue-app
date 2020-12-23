@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Tab',
+  name: "Tab",
   props: {
     active: {
       type: Boolean,
@@ -17,7 +17,7 @@ export default {
       required: true,
     },
   },
-}
+};
 </script>
 
 <style>

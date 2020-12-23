@@ -28,8 +28,8 @@
 
 <script>
 export default {
-  name: 'TabsToggle',
-}
+  name: "TabsToggle",
+};
 </script>
 
 <style>

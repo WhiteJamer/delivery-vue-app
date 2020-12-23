@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'ErrorHelper',
-}
+  name: "ErrorHelper",
+};
 </script>

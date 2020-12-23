@@ -1,33 +1,32 @@
 <template>
   <div class="home">
     <div class="container">
-      <h1 class="page-title">Выберите способ доставки</h1>
+      <h1 class='page-title'>Выберите способ доставки</h1>
       <tabs :currentTab="currentTab"
         ><tab
           @click.native="currentTab = tab"
           :tab="tab"
-          :active="currentTab == tab"
+          :active="currentTab === tab"
           v-for="(tab, index) in tabs"
           :key="index"
         />
       </tabs>
       <tabs-content>
-        <form-delivery v-if="currentTab.tag == 'delivery'" />
-        <form-pickup v-if="currentTab.tag == 'pickup'" />
+        <component :is="currentTab.component" />
       </tabs-content>
     </div>
   </div>
 </template>
 
 <script>
-import Tabs from '@/components/Tabs'
-import TabsContent from '@/components/TabsContent'
-import FormDelivery from '../components/FormDelivery'
-import FormPickup from '../components/FormPickup'
-import Tab from '../components/Tab.vue'
+import Tabs from "@/components/Tabs";
+import TabsContent from "@/components/TabsContent";
+import FormDelivery from "../components/FormDelivery";
+import FormPickup from "../components/FormPickup";
+import Tab from "../components/Tab.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     Tabs,
     Tab,
@@ -37,13 +36,12 @@ export default {
   },
   data() {
     return {
-      currentTab: { tag: 'delivery', title: 'Доставка' },
+      currentTab: { component: "form-delivery",  title: "Доставка" },
       tabs: [
-        { tag: 'delivery', title: 'Доставка' },
-        { tag: 'pickup', title: 'Самовывоз' },
+        { component: "form-delivery" , title: "Доставка" },
+        { component: "form-pickup", title: "Самовывоз" },
       ],
-    }
+    };
   },
-  methods: {},
-}
+};
 </script>

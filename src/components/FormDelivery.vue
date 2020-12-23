@@ -95,12 +95,12 @@
 </template>
 
 <script>
-import { validationMixin } from 'vuelidate'
-import { required } from 'vuelidate/lib/validators'
-import ErrorHelper from '@/components/ErrorHelper'
+import { validationMixin } from "vuelidate";
+import { required } from "vuelidate/lib/validators";
+import ErrorHelper from "@/components/ErrorHelper";
 
 export default {
-  name: 'FormDelivery',
+  name: "FormDelivery",
   mixins: [validationMixin],
   data() {
     return {
@@ -108,7 +108,7 @@ export default {
       phone: null,
       address: null,
       comment: null,
-    }
+    };
   },
   components: { ErrorHelper },
   validations: {
@@ -116,9 +116,9 @@ export default {
       required,
       symbols: function () {
         if (this.fio) {
-          return this.fio.length && /^[А-ЯЁ\s-]+$/iu.test(this.fio)
+          return this.fio.length && /^[А-ЯЁ\s-]+$/iu.test(this.fio);
         } else {
-          return true
+          return true;
         }
       },
     },
@@ -126,7 +126,7 @@ export default {
     address: { required },
     comment: { required },
   },
-}
+};
 </script>
 
 <style>

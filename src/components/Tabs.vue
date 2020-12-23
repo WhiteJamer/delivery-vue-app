@@ -2,7 +2,7 @@
   <div>
     <nav class="tabs" :class="{ 'tabs--open': isOpen }">
       <tabs-toggle />
-      <div class="tabs__items">
+      <div class='tabs__items'>
         <slot></slot>
       </div>
     </nav>
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import TabsToggle from './TabsToggle.vue'
+import TabsToggle from "./TabsToggle.vue";
 export default {
-  name: 'Tabs',
+  name: "Tabs",
   data() {
     return {
       isOpen: false,
-    }
+    };
   },
   components: { TabsToggle },
   props: {
@@ -25,7 +25,7 @@ export default {
       required: true,
     },
   },
-}
+};
 </script>
 
 <style>
